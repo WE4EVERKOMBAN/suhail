@@ -702,7 +702,7 @@ db.collection('balance').updateOne({userId: ctx.from.id}, {$set: {withhamount: 0
 db.collection('vUsers').updateOne({stat: 'stat'}, {$set: {value: sta}}, {upsert: true})
 
  // enter coinpayment key
-var curp = 'MetaJoker'
+var curp = 'impulse'
  ctx.replyWithMarkdown(   "✅ *Withdrawal Requested*\n_You will receive your Payment within Some Minutes!_\n\n💳 Transaction Details:" +
  "\n" +
  ann+
@@ -757,7 +757,7 @@ var reee = resrult.transactionHash
 // var jio = "<b>📤 New Withdraw Request!\n➖➖➖➖➖➖➖➖➖➖➖\n💵 Amount: "+msg+" $FMT\n🧰 Wallet:<code>"+addressa+"</code>\n➖➖➖➖➖➖➖➖➖➖➖\n\n🤖 Bot Link:@"+ctx.botInfo.username+"</b>"
 
 // var jio = "<b>📤 New Withdraw Request!\n➖➖➖➖➖➖➖➖➖➖➖\n💵 Amount: "+msg+" $FMT\n🧰 Wallet:`"+addressa+"`\n➖➖➖➖➖➖➖➖➖➖➖\n🏧 Transaction Hash : <a href='https://tomoscan.io/tx/"+reee+"'>" + reee + "</a>\n➖➖➖➖➖➖➖➖➖➖➖\n🤖 Bot Link:@"+ctx.botInfo.username+"</b>"
-// bot.telegram.sendMessage('@payoutproof12', jio , { parse_mode: 'html' , disable_web_page_preview: true})
+// bot.telegram.sendMessage('@ImpulseXAirdrop', jio , { parse_mode: 'html' , disable_web_page_preview: true})
 ctx.replyWithHTML("<b>Withdraw Successful\n🏧 Transaction Hash : <a href='https://tomoscan.io/tx/"+reee+"'>" + reee + "</a></b>",{
 disable_web_page_preview:'true'
 })
@@ -793,7 +793,7 @@ function rndInt(min, max){
   
   function mustJoin(ctx){
  
-    msg ='*🔎Join our all channel*\n*➖➖➖➖➖➖➖➖➖➖➖*\n*@Facinated_Airdrops\n@Apple_Airdrops\n@FortifyAirdrop\n@FacinatingAirdrops\n@unicorn_drops\n@Helpeveryone5*\n*➖➖➖➖➖➖➖➖➖➖➖*\n[🔰Subscribe Our YouTube Channel](https://youtube.com/channel/UCEELxgUJhss6mnpLCFqw9jg)\n[🔰Follow Our Twiter Account](https://twitter.com/AirdropPerfects)\n*➖➖➖➖➖➖➖➖➖➖➖*\n*🛃 Before Using This Bot!*', { parse_mode: 'markdown', disable_web_page_preview : 'true' , reply_markup: { inline_keyboard:[[{ text: "✅ Check", callback_data: "checkoo" }]]} }
+    msg ='*🔎Join our all channel*\n*➖➖➖➖➖➖➖➖➖➖➖*\n*AlphaCoin_inc*\n*➖➖➖➖➖➖➖➖➖➖➖*\n[🔰Subscribe Our YouTube Channel](https://youtube.com/channel/UCEELxgUJhss6mnpLCFqw9jg)\n[🔰Follow Our Twiter Account](https://twitter.com/AirdropPerfects)\n*➖➖➖➖➖➖➖➖➖➖➖*\n*🛃 Before Using This Bot!*', { parse_mode: 'markdown', disable_web_page_preview : 'true' , reply_markup: { inline_keyboard:[[{ text: "✅ Check", callback_data: "checkoo" }]]} }
   
   ctx.replyWithMarkdown(msg, { parse_mode: 'markdown', disable_web_page_preview : 'true' , reply_markup: { keyboard: [['✅  Check']], resize_keyboard: true } })
   }
